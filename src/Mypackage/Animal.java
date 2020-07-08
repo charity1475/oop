@@ -14,11 +14,11 @@ public class Animal {
         this.weight = weight;
     }
     // creating common methods
-    public void eat(){
-
+    public void eat(String material){
+        System.out.println(name + " prefer to eat " + material);
     }
-    public void move(){
-
+    public void move(String motion){
+        System.out.println(name + " moves by "+ motion);
     }
 
     //creating getters

@@ -14,4 +14,15 @@ public class Dog extends Animal{
         this.eyes = eyes;
         this.legs = legs;
     }
+    // here i need to override the method eat from animal class
+
+    private void chew(){
+        System.out.println("Dogs Eat by chewing");
+    }
+
+    @Override
+    public void eat(String material) {
+        chew();
+        super.eat(material);
+    }
 }
