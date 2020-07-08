@@ -23,6 +23,7 @@ public class Dog extends Animal{
     @Override
     public void eat(String material) {
         chew();
+        // specifying a method from a superclass
         super.eat(material);
     }
 }
