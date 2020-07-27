@@ -8,4 +8,5 @@ public class Resolution {
         this.width = width;
         this.height = height;
     }
+
 }

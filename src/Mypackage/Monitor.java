@@ -4,6 +4,8 @@ public class Monitor {
     private String model;
     private String manufacturer;
     private String size;
+    /* this is composition mo class isn't a Resolution
+    Resolution is a component of Monitor */
     private Resolution nativeResolution;
 
     public Monitor(String model, String manufacturer, String size, Resolution nativeResolution) {
