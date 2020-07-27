@@ -1,7 +1,5 @@
 package Mypackage;
 
-import java.awt.*;
-
 public class Case {
     private String model;
     private String size;
