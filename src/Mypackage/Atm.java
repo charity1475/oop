@@ -1,7 +1,7 @@
 package Mypackage;
 
 public class Atm {
-    static void withdraw(Synchronized account, int amount){
+    static synchronized void withdraw(Synchronized account, int amount){
         int balance = account.getBalance();
         if((balance-amount) <= account.getOverdraft()){
             System.out.println("Transaction denied");
