@@ -8,9 +8,11 @@ public class Library {
         /* Stream uses internal iteration, for each use
         foreach using streams, collecting and save then
         work on collected books filter is a lazy method
-        and the foreach is eiger method */
+        and the foreach is eiger method, parallelStream can be used for fast */
         books.stream().filter(book ->{
             return book.getAuthor().startsWith("J");
+        }).filter(book ->{
+            return book.getTitle().startsWith("T");
         }).forEach(System.out::println);
     }
     static ArrayList<Book> populateLibrary(){
