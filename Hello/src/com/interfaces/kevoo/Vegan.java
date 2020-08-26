@@ -1,10 +1,10 @@
 package com.interfaces.kevoo;
 
-public class Vegan {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class Vegan extends AbstractClass{
+	@Override
+	public void eat() {
+		System.out.println("He like eating Vegan food");
 	}
+
 
 }
