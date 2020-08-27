@@ -14,6 +14,7 @@ public class SupplierTest {
 		Predicate<Person> predicate = (p) -> p.age>18;
 		boolean result = isEligible(supplier, predicate);
 		System.out.println("The answer is "+result);
+		/*more about supplier interface*/
 		IntSupplier supplier1 =  ()-> (int)(Math.random()*10);
 		System.out.println(supplier1.getAsInt());
 		
