@@ -12,6 +12,13 @@ public class ConsumerDemo {
 		 * abstract method accept */
 		Consumer<Integer> intConsumer = s->System.out.println(s);
 		intConsumer.accept(20);
+		/*and then consumer */
+		Consumer<String> one = (arg)->System.out.println(arg + " My name is Charity");
+		Consumer<String> two = (arg)->System.out.println(arg + " I'm from Tanzania");
+		one.andThen(two).accept("Hello");
+		
+
+
 		
 	}
 
