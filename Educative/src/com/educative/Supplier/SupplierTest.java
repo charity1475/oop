@@ -1,5 +1,6 @@
 package com.educative.Supplier;
 
+import java.util.function.IntSupplier;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
@@ -13,6 +14,8 @@ public class SupplierTest {
 		Predicate<Person> predicate = (p) -> p.age>18;
 		boolean result = isEligible(supplier, predicate);
 		System.out.println("The answer is "+result);
+		IntSupplier supplier1 =  ()-> (int)(Math.random()*10);
+		System.out.println(supplier1.getAsInt());
 		
 	}
 
