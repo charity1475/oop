@@ -4,7 +4,7 @@ public class Person implements LiveLife,IsAlive{
 	
 	@Override
 	public void breathe() {
-		System.out.println("Took a long breathe ");
+		System.out.println("Take a long breathe ");
 	}
 
 	@Override
