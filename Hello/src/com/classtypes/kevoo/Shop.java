@@ -8,7 +8,7 @@ public class Shop {
 			System.out.println("The shop is closed ");
 		}
 		else {
-			System.out.println("Welcome the shop is open ");
+			System.out.println("Welcome, the shop is open ");
 		}
 
 	}
