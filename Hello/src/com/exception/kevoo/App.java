@@ -10,8 +10,11 @@ public class App {
 	public static void case1(int x, int y) {
 		try {
 			System.out.println("case1: x/y = " + x/y);
-		} catch (Exception e) {
+		}catch (ArithmeticException e) {
+			System.out.println("Arthematic exception occured");
+		}catch (Exception e) {
 			System.out.println("Zero Division error");
+			e.printStackTrace();
 		}
 		
 	}
