@@ -1,10 +1,10 @@
 package com.staticelement.kevoo;
 
 public class ClassB extends ClassA {
-	private final int x = 5;
-
-	public ClassB(int x) {
-		super("Charity");
+	//use final for values that won't change
+	private final int x ;
+	public ClassB() {
+		this.x = 5;
 	}
 
 	public int getX() {
