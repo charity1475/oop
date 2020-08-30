@@ -10,9 +10,10 @@ public class SupplierDemo {
 		return predicate.test(supplier.get());
 	}
 
-	public static void main(String[] args) {
-		Person person = new Person("Ally", 20);
+	public static void main(String[] args, Supplier<Person> supplier, Predicate<Person> predicate) {
+		//Person person = new Person("Ally", 20);
 		boolean eligible = isEligible(supplier, predicate);
+		System.out.println(eligible);
 
 	}
 
