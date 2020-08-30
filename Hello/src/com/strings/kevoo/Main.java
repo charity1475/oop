@@ -5,10 +5,9 @@ public class Main {
 	public static void main(String[] args) {
 		String x  ="Study";
 		String y ="Easy";
-		String z; //=x+y;
+		String z = x.concat(y);
 		//System.out.println(z);
 		// a wrong way to compare strings
-		z = x.concat(y);
 		if(z=="StudyEasy") {
 			System.out.println("z==\"StudyEasy\"");
 		}else {
