@@ -1,5 +1,5 @@
 package com.enums.kevoo;
 
 public enum Enum {
-
+	COREJAVA,COLLECTIONS,GENERICS,JSPANDSERVLETS,MULTITHREADING
 }
