@@ -12,7 +12,7 @@ public class Main extends Exception{
 		try {
 			method();
 		}catch (FileNotFoundException e) {
-			System.out.println("File notfound Exception");
+			System.out.println("File not found Exception");
 		} catch (UserDefinedException e) {
 			System.out.println("My Exception");
 		}catch (Exception e) {
