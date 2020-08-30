@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javaee-web-api-8.0-javadoc">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../Jlib/javaee-web-api-8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
