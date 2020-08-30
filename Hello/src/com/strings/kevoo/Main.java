@@ -18,6 +18,14 @@ public class Main {
 		}else {
 			System.out.println("z not equals \"StudyEasy\"");
 		}
+		//formating
+		float floatVar=3;
+		int intVar=1;
+		String stringVar="Charity";
+		System.out.printf("float  %f, while " + 
+                "integer is %d, " +
+                "and the string is %s", 
+                floatVar, intVar, stringVar); 
 
 	}
 
