@@ -1,22 +1,40 @@
 package com.exception.kevoo;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+class UserDefinedException extends Throwable{
+	
+}
 
-public class Main {
+public class Main extends Exception{
 
 	public static void main(String[] args){
 		try {
 			method();
-		} catch (Exception e) {
+		}catch (FileNotFoundException e) {
+			System.out.println("File notfound Exception");
+		} catch (UserDefinedException e) {
+			System.out.println("My Exception");
+		}catch (Exception e) {
 			System.out.println("Exception");
 		}
 	}
-	public static void method() throws FileNotFoundException {
+	// child class can not handle a parent exception
+	public static void method() throws Exception,FileNotFoundException, UserDefinedException {
 		System.out.println("Hello, I'm the method");
 			FileReader reader = new FileReader("file.txt");
-			throw new FileNotFoundException();
+			switch (2) {
+			case 1: 
+				throw new FileNotFoundException();
+				
+			case 2: 
+				throw new UserDefinedException();
+						
+			default:
+				throw new Exception();
+			}
+
+			//nothing executed after returning an exception
 		
 	}
 
