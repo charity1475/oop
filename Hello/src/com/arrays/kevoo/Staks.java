@@ -1,5 +1,6 @@
 package com.arrays.kevoo;
 
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class Staks {
@@ -24,6 +25,22 @@ public class Staks {
 		for(int one: demo) {
 			System.out.println(one);
 		}
+		
+		// dealing with linked lists
+		LinkedList<String> countries = new LinkedList<>();
+		countries.add("Tanzania");
+		countries.add("Uganda");
+		countries.add("Rwanda");
+		countries.add("Burundi");
+		System.out.println(countries);
+		countries.add(1,"Kenya");
+		System.out.println(countries);
+		countries.set(2, "Somali");
+		System.out.println(countries);
+		countries.remove();
+		System.out.println(countries);
+		
 	}
+	
 
 }
