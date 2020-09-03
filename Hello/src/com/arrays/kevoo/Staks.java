@@ -1,5 +1,6 @@
 package com.arrays.kevoo;
 
+import java.util.Comparator;
 import java.util.Iterator;
 
 import java.util.LinkedList;
@@ -36,6 +37,9 @@ public class Staks {
 		countries.add("Uganda");
 		countries.add("Rwanda");
 		countries.add("Burundi");
+		System.out.println(countries);
+		countries.sort(null);
+		System.out.println("Sorted list");
 		System.out.println(countries);
 		countries.add(1,"Kenya");
 		System.out.println(countries);
