@@ -1,7 +1,11 @@
 package com.arrays.kevoo;
 
+import java.util.Iterator;
+
 import java.util.LinkedList;
 import java.util.Stack;
+
+import java.util.List;
 
 public class Staks {
 
@@ -39,7 +43,19 @@ public class Staks {
 		System.out.println(countries);
 		countries.remove();
 		System.out.println(countries);
+		Staks mine = new Staks();
+		System.out.println("Here is a method");
+		System.out.println("A call without a constructor");
+		new Staks().printList(countries);
+		System.out.println("A call with a constructor");
+		mine.printList(countries);
 		
+	}
+	void printList(List<String> list) {
+		Iterator<String> iterator = list.iterator();
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
 	}
 	
 
