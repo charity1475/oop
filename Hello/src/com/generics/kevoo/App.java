@@ -25,9 +25,6 @@ class Generic<T>{
 	public T getObj() {
 		return obj;
 	}
-	public void setObj(T obj) {
-		this.obj = obj;
-	}
 	@Override
 	public String toString() {
 		return "Generic [obj=" + obj + "]";
@@ -41,6 +38,7 @@ public class App {
 		Data data = new Data("Sting here");
 		String variable = (String)data.getObject();
 		System.out.println(variable);
+		// here is how generic is done 
 		Generic<String> myData = new Generic<String>("Charity");
 		String name=myData.getObj();
 		System.out.println(name);
